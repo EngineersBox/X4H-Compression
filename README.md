@@ -1,2 +1,2 @@
-# X4H-Compression
+# X4H Compression
 A compression algorithm based on chunk splitting and meshing
