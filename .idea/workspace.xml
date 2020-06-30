@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b94d3c6c-fdaf-4aa9-9268-786c25dfe27f" name="Default Changelist" comment="" />
+    <list default="true" id="b94d3c6c-fdaf-4aa9-9268-786c25dfe27f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/x4h/fileHandling/image/FileProcessing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/x4h/fileHandling/image/ImageFileType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/x4h/Chunking/ByteArrayComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/x4h/chunking/ByteArrayComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/x4h/Chunking/ByteChunks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/x4h/chunking/ByteChunks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/x4h/Chunking/ChunkPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/x4h/chunking/ChunkPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/x4h/main/X4H.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/x4h/main/X4H.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +19,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dzihO8QP6mYYy6muOtH51NjeAG" />
   <component name="ProjectViewState">
@@ -27,14 +40,21 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.x4h.fileHandling" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593434440227</updated>
       <workItem from="1593434444939" duration="13286000" />
+      <workItem from="1593501376756" duration="14948000" />
     </task>
     <servers />
   </component>
@@ -54,6 +75,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="4605" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1593521968804">
+      <screen x="3840" y="11" width="1920" height="1050" />
+    </state>
+    <state x="4605" y="252" key="#com.intellij.ide.util.MemberChooser/1920.11.1920.1050/3840.11.1920.1050/0.0.1920.1050@3840.11.1920.1050" timestamp="1593521968804" />
+    <state x="4591" y="435" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1593522764379">
+      <screen x="3840" y="11" width="1920" height="1050" />
+    </state>
+    <state x="4591" y="435" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1920.11.1920.1050/3840.11.1920.1050/0.0.1920.1050@3840.11.1920.1050" timestamp="1593522764379" />
     <state x="4396" y="236" key="SettingsEditor" timestamp="1593437199168">
       <screen x="3840" y="11" width="1920" height="1050" />
     </state>

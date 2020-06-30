@@ -1,6 +1,6 @@
 package com.x4h.main;
 
-import com.x4h.Chunking.ByteChunks;
+import com.x4h.chunking.ByteChunks;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -20,6 +20,7 @@ public class X4H implements X4HBase {
     @NotNull
     public byte[] compress(@NotNull byte[] data) {
         List<byte[]> chunks = ByteChunks.chunkSplit(data, this.compressionOptions.chunk_size);
+        chunks = ByteChunks.meshChunks(chunks);
         return data;
     }
 

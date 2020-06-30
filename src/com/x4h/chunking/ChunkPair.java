@@ -1,4 +1,4 @@
-package com.x4h.Chunking;
+package com.x4h.chunking;
 
 import org.jetbrains.annotations.NotNull;
 
