@@ -2,6 +2,7 @@ package com.x4h.fileHandling.image;
 
 public enum ImageFileType {
 
+    DNG("dng"),
     TIFF("tiff"),
     SVG("svg"),
     BMP("bmp"),

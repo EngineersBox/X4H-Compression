@@ -4,9 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -98,6 +96,20 @@ public abstract class ImageProcessing {
      */
     public static void writeImage(@NotNull String file_name, @NotNull BufferedImage image, @NotNull ImageFileType file_type) throws IOException {
         ImageIO.write(image, file_type.getFileExtension(), new File(file_name));
+    }
+
+    /**
+     * Write buffered image data to a location of a given format
+     *
+     * @param file_name Location to write image data to
+     * @param image_data Byte array of values
+     * @param file_type Enum value from ImageFileType
+     * @throws IOException If location does not exist or is in an invalid format
+     */
+    public static void writeImage(@NotNull String file_name, @NotNull byte[] image_data,  @NotNull ImageFileType file_type) throws IOException {
+        InputStream in = new ByteArrayInputStream(image_data);
+        BufferedImage bImageFromConvert = ImageIO.read(in);
+        writeImage(file_name, bImageFromConvert, file_type);
     }
 
 }
