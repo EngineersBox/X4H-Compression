@@ -11,7 +11,7 @@ public class CompressionOptions {
     public int chunk_size; // How many bytes per chunk
 
     public CompressionOptions() {
-        new CompressionOptions(1000000000, 550, 500, 5);
+        this(1000000000, 550, 500, 25);
     }
 
     public CompressionOptions(int data_size, int read_rate, int write_rate, int chunk_size) {

@@ -18,14 +18,16 @@ public abstract class ByteChunks {
     public static List<byte[]> chunkSplit(@NotNull byte[] data_bytes, int chunk_size) {
         List<byte[]> chunks = new ArrayList<>();
         int chunk_count = data_bytes.length / chunk_size;
-        IntStream.range(0, chunk_count)
-            .parallel().forEach(i -> chunks.add(
-                Arrays.copyOfRange(
-                    data_bytes,
-                    0,
-                    Math.min(data_bytes.length, i + (chunk_count * chunk_size))
-                )
-            ));
+        IntStream.range(0, chunk_size)
+            .parallel().forEach(i -> {
+                chunks.add(
+                    Arrays.copyOfRange(
+                        data_bytes,
+                        i,
+                        Math.min(data_bytes.length, i + (chunk_count * chunk_size))
+                    )
+                );
+            });
         return chunks;
     }
 
@@ -40,12 +42,16 @@ public abstract class ByteChunks {
         List<byte[]> sorted_chunks = new ArrayList<>();
 
         chunks.sort(new ByteArrayComparator());
-        int chunks_length = (int) Math.ceil(chunks.size() / 2.0);
 
-        IntStream.range(0, Math.floorDiv(chunks.size(), 2))
+//        for (byte[] b : chunks) {
+//            System.out.println(Arrays.toString(b));
+//        }
+
+        int chunks_length = (int) Math.ceil(chunks.size() / 2.0);
+        IntStream.rangeClosed(0, Math.floorDiv(chunks.size(), 2))
             .parallel().forEach(i -> {
                 sorted_chunks.add(chunks.get(i));
-                sorted_chunks.add(chunks.get(chunks_length + i));
+                sorted_chunks.add(chunks.get(chunks_length + i - 1));
             });
         if (chunks.size() % 2 != 0) {
             sorted_chunks.add(chunks.get(chunks_length - 1));
